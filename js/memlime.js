@@ -1,16 +1,16 @@
 const cardArray = [
-    {  name: 'a1',  img: '  imglime/a1.JPG', },
-    {  name: 'a2',  img: '  imglime/a2.JPG', },
-    {  name: 'a3',  img: '  imglime/a3.JPG', },
-    {  name: 'a4',  img: '  imglime/a4.JPG', },
-    {  name: 'a5',  img: '  imglime/a5.JPG', },
-    {  name: 'a6',  img: '  imglime/a6.JPG', },
-    {  name: 'a1',  img: '  imglime/a1.JPG', },
-    {  name: 'a2',  img: '  imglime/a2.JPG', },
-    {  name: 'a3',  img: '  imglime/a3.JPG', },
-    {  name: 'a4',  img: '  imglime/a4.JPG', },
-    {  name: 'a5',  img: '  imglime/a5.JPG', },
-    {  name: 'a6',  img: '  imglime/a6.JPG', }
+    {  name: 'a1',  img: '  ../imglime/a1.JPG', },
+    {  name: 'a2',  img: '  ../imglime/a2.JPG', },
+    {  name: 'a3',  img: ' ../imglime/a3.JPG', },
+    {  name: 'a4',  img: ' ../imglime/a4.JPG', },
+    {  name: 'a5',  img: '  ../imglime/a5.JPG', },
+    {  name: 'a6',  img: '  ../imglime/a6.JPG', },
+    {  name: 'a1',  img: '  ../imglime/a1.JPG', },
+    {  name: 'a2',  img: '  ../imglime/a2.JPG', },
+    {  name: 'a3',  img: '  ../imglime/a3.JPG', },
+    {  name: 'a4',  img: '  ../imglime/a4.JPG', },
+    {  name: 'a5',  img: '  ../imglime/a5.JPG', },
+    {  name: 'a6',  img: '  ../imglime/a6.JPG', }
     ];
 
 let gridDisplay = document.querySelector('#grid');
