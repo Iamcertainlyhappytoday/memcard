@@ -78,8 +78,6 @@ margin:-25px auto auto auto;padding: 0; }
 
   }*/
   @media(width<620px) {
-      #grid{
-         width: 90%;
-        
-      }
+      #grid{  width: 90%;}
+      button{font-size:1.5em;}
     }
