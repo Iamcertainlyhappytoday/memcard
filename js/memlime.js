@@ -23,7 +23,7 @@ function gridDisplaya(){
     }
 }
  //cardArray=cardArr.sort(()=> 0.5 - Math.random());
-const resultDisplay = document.querySelector('#rover4 span');
+const resultDisplay = document.querySelector('#rover4 h3 span');
 const ally=document.querySelector('#alerter')
 let cardsChosen=[];
 let cardsChosenIds = [];
