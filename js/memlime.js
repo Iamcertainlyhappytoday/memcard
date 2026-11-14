@@ -27,8 +27,8 @@ const resultDisplay = document.querySelector('#rover4 h3 span');
 const ally=document.querySelector('#alerter')
 let cardsChosen=[];
 let cardsChosenIds = [];
-let cardsWon=0;
-let cardId;
+const cardsWon = 0;
+const cardId;
 
  function createBoard(){   
   cardArray.sort(()=> 0.5 - Math.random());
@@ -71,7 +71,7 @@ createBoard();
     }
 }
 
-    resultDisplay.innerHTML = toNumber(cardsWon);
+    resultDisplay.innerHTML = cardsWon;
     cardsChosen.splice(0,cardsChosen.length)// 0 is start and deletes the whole way
     // or while (arr.length > 0) {  arr.pop();}  = the slower method
     cardsChosenIds.splice(0,cardsChosenIds.length);
