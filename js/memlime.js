@@ -1,23 +1,23 @@
 const cardArray = [
-    {  name: 'a1',  img: '  ../imglime/a1.JPG', },
-    {  name: 'a2',  img: '  ../imglime/a2.JPG', },
-    {  name: 'a3',  img: ' ../imglime/a3.JPG', },
-    {  name: 'a4',  img: ' ../imglime/a4.JPG', },
-    {  name: 'a5',  img: '  ../imglime/a5.JPG', },
-    {  name: 'a6',  img: '  ../imglime/a6.JPG', },
-    {  name: 'a1',  img: '  ../imglime/a1.JPG', },
-    {  name: 'a2',  img: '  ../imglime/a2.JPG', },
-    {  name: 'a3',  img: '  ../imglime/a3.JPG', },
-    {  name: 'a4',  img: '  ../imglime/a4.JPG', },
-    {  name: 'a5',  img: '  ../imglime/a5.JPG', },
-    {  name: 'a6',  img: '  ../imglime/a6.JPG', }
+    {  name: 'a1',  img: '  imglime/a1.JPG', },
+    {  name: 'a2',  img: '  imglime/a2.JPG', },
+    {  name: 'a3',  img: ' imglime/a3.JPG', },
+    {  name: 'a4',  img: ' imglime/a4.JPG', },
+    {  name: 'a5',  img: '  imglime/a5.JPG', },
+    {  name: 'a6',  img: '  imglime/a6.JPG', },
+    {  name: 'a1',  img: '  imglime/a1.JPG', },
+    {  name: 'a2',  img: '  imglime/a2.JPG', },
+    {  name: 'a3',  img: '  imglime/a3.JPG', },
+    {  name: 'a4',  img: '  imglime/a4.JPG', },
+    {  name: 'a5',  img: '  imglime/a5.JPG', },
+    {  name: 'a6',  img: '  imglime/a6.JPG', }
     ];
 
 let gridDisplay = document.querySelector('#grid');
 function gridDisplaya(){
     let grinner=gridDisplay.querySelectorAll('.cardsize img')
     for(let i=0; i<grinner.length; i++){
-        grinner[i].src="../imgBam/orange.PNG"
+        grinner[i].src="imgBam/orange.PNG"
         grinner[i].alt="default image"
         grinner[i].style="max-width:221px; max-height:127px; display:flex"
     }
@@ -48,22 +48,22 @@ createBoard();
     optionTwoId;    
     if (optionOneId === optionTwoId) {
         ally.innerHTML='You have clicked the same image!';    
-       cards[optionOneId].src='../imgBam/white.png';     
+       cards[optionOneId].src='imgBam/white.png';     
         cards[optionOneId].style="max-width:221px; max-height:127px; display:flex"
     }else{
         if (cardsChosen[0][1] ===cardsChosen[1][1]){
             ally.innerHTML='You found a match!'          
-            cards[optionOneId].src='../imgBam/blank.PNG';   
+            cards[optionOneId].src='imgBam/blank.PNG';   
             cards[optionOneId].style="max-width:221px; max-height:127px; display:flex"     
-            cards[optionTwoId].src='../imgBam/blank.PNG';    
+            cards[optionTwoId].src='imgBam/blank.PNG';    
             cards[optionTwoId].style="max-width:221px; max-height:127px; display:flex"
             cards[optionOneId].removeEventListener('click', flipCard);
             cards[optionTwoId].removeEventListener('click', flipCard);
             cardsWon+=1;          
         }else{           
-            cards[optionOneId].src='../imgBam/white.png';
+            cards[optionOneId].src='imgBam/white.png';
             cards[optionOneId].style="max-width:221px; max-height:127px; display:flex"          
-            cards[optionTwoId].src='../imgBam/white.png';        
+            cards[optionTwoId].src='imgBam/white.png';        
             cards[optionTwoId].style="max-width:221px; max-height:127px; display:flex"      
             ally.innerHTML='Sorry try again!'         
             //alert('Sorry try again!');
@@ -110,22 +110,22 @@ function flipCard(e) {
             const optionTwoId = cardsChosenIds[1];            
             if (optionOneId === optionTwoId) {
                 ally.innerHTML='You have clicked the same image!';    
-            target.src='../imgBam/white.png';   
+            target.src='imgBam/white.png';   
             target.style="max-width:221px; max-height:127px; display:flex" 
             }else{
                 if (cardsChosen[0][1] ===cardsChosen[1][1]){
                     ally.innerHTML='You found a match!'          
-                    document.querySelectorAll('#grid .cardsize img')[optionOneId].src='../imgBam/blank.PNG';   
+                    document.querySelectorAll('#grid .cardsize img')[optionOneId].src='imgBam/blank.PNG';   
                     document.querySelectorAll('#grid .cardsize img')[optionOneId].style="max-width:221px; max-height:127px; display:flex"
-                    target.src='../imgBam/blank.PNG';
+                    target.src='imgBam/blank.PNG';
                     target.style="max-width:221px; max-height:127px; display:flex"
                     cards[optionOneId].removeEventListener('click', flipCard);
                     cards[optionTwoId].removeEventListener('click', flipCard);
                     cardsWon+=1;          
                 }else{           
-                document.querySelectorAll('#grid .cardsize img')[optionOneId].src='../imgBam/white.png';  
+                document.querySelectorAll('#grid .cardsize img')[optionOneId].src='imgBam/white.png';  
                    document.querySelectorAll('#grid .cardsize img')[optionOneId].style=  "max-width:221px; max-height:127px; display:flex"
-                    target.src='../imgBam/white.png';    
+                    target.src='imgBam/white.png';    
                     target.style="max-width:221px; max-height:127px; display:flex" 
                     ally.innerHTML='Sorry try again!'         
                     //alert('Sorry try again!');
