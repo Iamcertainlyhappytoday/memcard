@@ -40,8 +40,8 @@ margin:-25px auto auto auto;padding: 0; }
 .yellow{font-size:large; color:springgreen;background-color: blue; border-radius: 10px;}
 .yellow:hover{font-size:large; color:springgreen;background-color: whitesmoke;  border-radius: 10px; }
 #roverh4 {margin:5px auto; background-color: yellow; color: teal;border: 2px white solid;padding: 4px;}
-.red{ background-color:blanchedalmond;font-size:1.3em; color:orangered; border-radius:10px;}
-.button {height: fit-content;        color: #FFF;        background-color: royalblue;          
+.red{ background-color:blanchedalmond;font-size:1.6em; color:orangered; border-radius:10px;}
+.button {height: fit-content; font-size:1.6em;       color: #FFF;        background-color: royalblue;          
         padding-left: 5px;  padding-top: 1px;             border: 2px solid #5D6063;    
         border-radius: 3px;              margin: 5px auto;font-size: small; }
 .button:hover { font-size: larger; }     
@@ -49,5 +49,5 @@ margin:-25px auto auto auto;padding: 0; }
  
   @media(width<620px) {
       #grid{   width: 90%;  }
-       header .hangnav button{font-size:1.5em; padding:5px;
+       .button, .red{font-size:1.8em; padding:5px;
     }
