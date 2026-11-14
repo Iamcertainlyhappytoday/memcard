@@ -13,6 +13,8 @@ const cardArray = [
     {  name: 'a6',  img: 'imglime/a6.JPG', }
     ];
 
+
+
 let gridDisplay = document.querySelector('#grid');
 function gridDisplaya(){
     let grinner=gridDisplay.querySelectorAll('.cardsize img')
@@ -23,12 +25,11 @@ function gridDisplaya(){
     }
 }
  //cardArray=cardArr.sort(()=> 0.5 - Math.random());
-const resultDisplay = document.querySelector('#rover4 h3 span');
-resultDisplay.innerText=0;
+const resultDisplay = document.querySelector('#result');
 const ally=document.querySelector('#alerter')
 let cardsChosen=[];
 let cardsChosenIds = [];
-const cardsWon = toNumber(resultDisplay.innerText);
+let cardsWon=0;
 let cardId;
 
  function createBoard(){   
@@ -71,12 +72,12 @@ createBoard();
         }    
     }
 }
-console.log(typeOf(resultDisplay))
+
     resultDisplay.innerHTML = cardsWon;
     cardsChosen.splice(0,cardsChosen.length)// 0 is start and deletes the whole way
     // or while (arr.length > 0) {  arr.pop();}  = the slower method
     cardsChosenIds.splice(0,cardsChosenIds.length);
-    if (cardsWon.length  == (cardArray.length/2)){
+    if (cardsWon.length == (cardArray.length/2)){
         //alert or
         resultDisplay.innerHTML = ' congratulations, you\'ve found all '+cardsWon+'<br>try again?';
         ally.innerHTML='';       
@@ -86,7 +87,7 @@ console.log(typeOf(resultDisplay))
 
 function resp(){
     gridDisplaya()
-    cardsWon=2;    
+    cardsWon=0;    
     createBoard()
 }
 function flipCard(e) { 
@@ -146,7 +147,7 @@ function recount(){
             ally.innerHTML='';       
         resp()
         }else{
-             document.querySelector('#result').innerHTML = cardsWon-2;
+             document.querySelector('#result').innerHTML = cardsWon;
         }
 }
  
@@ -166,3 +167,4 @@ function changeRed(cls,clr,clr2) {
       elem.style.color = clr;      
   }
 }   
+ 
