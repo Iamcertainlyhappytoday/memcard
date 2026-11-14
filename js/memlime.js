@@ -70,7 +70,7 @@ createBoard();
         }    
     }
 }
-
+console.log(typeOf(resultDisplay))
     resultDisplay.innerHTML = cardsWon -2;
     cardsChosen.splice(0,cardsChosen.length)// 0 is start and deletes the whole way
     // or while (arr.length > 0) {  arr.pop();}  = the slower method
