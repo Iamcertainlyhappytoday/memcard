@@ -1,16 +1,16 @@
 const cardArray = [
-    {  name: 'a1',  img: '  imgdavid/a1.JPG', },
-    {  name: 'a2',  img: '  imgdavid/a2.JPG', },
-    {  name: 'a3',  img: '  imgdavid/a3.JPG', },
-    {  name: 'a4',  img: '  imgdavid/a4.JPG', },
-    {  name: 'a5',  img: '  imgdavid/a5.JPG', },
-    {  name: 'a6',  img: '  imgdavid/a6.JPG', },
-    {  name: 'a1',  img: '  imgdavid/a1.JPG', },
-    {  name: 'a2',  img: '  imgdavid/a2.JPG', },
-    {  name: 'a3',  img: '  imgdavid/a3.JPG', },
-    {  name: 'a4',  img: '  imgdavid/a4.JPG', },
-    {  name: 'a5',  img: '  imgdavid/a5.JPG', },
-    {  name: 'a6',  img: '  imgdavid/a6.JPG', }
+    {  name: 'a1',  img: '../imgdavid/a1.JPG', },
+    {  name: 'a2',  img: ' ../imgdavid/a2.JPG', },
+    {  name: 'a3',  img: '  ../imgdavid/a3.JPG', },
+    {  name: 'a4',  img: '  ../imgdavid/a4.JPG', },
+    {  name: 'a5',  img: '  ../imgdavid/a5.JPG', },
+    {  name: 'a6',  img: ' ../imgdavid/a6.JPG', },
+    {  name: 'a1',  img: '  ../imgdavid/a1.JPG', },
+    {  name: 'a2',  img: ' ../imgdavid/a2.JPG', },
+    {  name: 'a3',  img: '  ../imgdavid/a3.JPG', },
+    {  name: 'a4',  img: ' ../imgdavid/a4.JPG', },
+    {  name: 'a5',  img: '  ../imgdavid/a5.JPG', },
+    {  name: 'a6',  img: '  ../imgdavid/a6.JPG', }
     ];
 
 let gridDisplay = document.querySelector('#grid');
