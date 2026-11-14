@@ -28,7 +28,7 @@ const ally=document.querySelector('#alerter')
 let cardsChosen=[];
 let cardsChosenIds = [];
 const cardsWon = 0;
-const cardId;
+let cardId;
 
  function createBoard(){   
   cardArray.sort(()=> 0.5 - Math.random());
