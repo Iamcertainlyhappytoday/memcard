@@ -24,10 +24,11 @@ function gridDisplaya(){
 }
  //cardArray=cardArr.sort(()=> 0.5 - Math.random());
 const resultDisplay = document.querySelector('#rover4 h3 span');
+resultDisplay.innerText=0;
 const ally=document.querySelector('#alerter')
 let cardsChosen=[];
 let cardsChosenIds = [];
-const cardsWon = 2;
+const cardsWon = toNumber(resultDisplay.innerText);
 let cardId;
 
  function createBoard(){   
@@ -71,11 +72,11 @@ createBoard();
     }
 }
 console.log(typeOf(resultDisplay))
-    resultDisplay.innerHTML = cardsWon -2;
+    resultDisplay.innerHTML = cardsWon;
     cardsChosen.splice(0,cardsChosen.length)// 0 is start and deletes the whole way
     // or while (arr.length > 0) {  arr.pop();}  = the slower method
     cardsChosenIds.splice(0,cardsChosenIds.length);
-    if (cardsWon.length -2 == (cardArray.length/2)){
+    if (cardsWon.length  == (cardArray.length/2)){
         //alert or
         resultDisplay.innerHTML = ' congratulations, you\'ve found all '+cardsWon+'<br>try again?';
         ally.innerHTML='';       
@@ -140,7 +141,7 @@ function flipCard(e) {
 function recount(){
         cardsChosen=[]//.splice(0,cardsChosen.length)// 0 is start and deletes the whole way        
         cardsChosenIds=[]//.splice(0,cardsChosenIds.length);
-        if (cardsWon -2== (cardArray.length/2)){   
+        if (cardsWon == (cardArray.length/2)){   
             resultDisplay.innerHTML = ' congratulations, you\'ve found all '+cardsWon+'<br>try again?';
             ally.innerHTML='';       
         resp()
