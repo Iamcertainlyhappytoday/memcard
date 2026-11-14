@@ -148,7 +148,7 @@ function recount(){
              document.querySelector('#result').innerHTML = cardsWon;
         }
 }
-document.querySelector('#copy').innerHTML = new Date().getFullYear()  
+
    function changeStyle(cls,clr,clr2) {
   let elems = document.getElementsByClassName(cls);
   if(!elems) return;
