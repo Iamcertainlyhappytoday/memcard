@@ -1,4 +1,4 @@
-body{ display:flex;   font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+er .hangnavbody{ display:flex;   font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 13px;flex-direction: column;margin: 0;padding: 0; width: 100vw; }         
 header {width: 100%; display: flex; background-size: cover;     
 background-repeat: no-repeat;   font: 12px Arial, Helvetica, sans-serif;  color: royalblue; flex-direction: column;}
@@ -79,5 +79,5 @@ margin:-25px auto auto auto;padding: 0; }
   }*/
   @media(width<620px) {
       #grid{   width: 90%;  }
-       button{font-size:1.5em; padding:5px;
+       header .hangnav button{font-size:1.5em; padding:5px;
     }
