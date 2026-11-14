@@ -1,6 +1,6 @@
 body{ display:flex;   font-family: 'Calibri', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 13px;flex-direction: column;margin: 0;padding: 0; width: 100vw; }         
-header {width: 100%; display: flex; background-image: url(../img/tentslim.JPG) ; background-size: cover;     
+header {width: 100%; display: flex; background-size: cover;     
 background-repeat: no-repeat;   font: 12px Arial, Helvetica, sans-serif;  color: royalblue; flex-direction: column;}
 #allcase{min-height:15px; display:flex; margin:0 auto;}
 #alerter { background-color:rebeccapurple; color: whitesmoke; margin: 5px auto 0 auto; 
