@@ -36,7 +36,7 @@ let cardId;
   cardArray.sort(()=> 0.5 - Math.random());
     let card=document.querySelectorAll('#grid .cardsize img')
         for(let i= 0 ; i<card.length; i++){ 
-            card[i].style="max-width:221px; max-height:127px; display:flex; postion:absolute;"
+            
             card[i].addEventListener('click', flipCard);
             console.log(cardArray[i])
     }   
