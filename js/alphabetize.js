@@ -66,3 +66,20 @@ function bluer(e){
 function normal(e){
     e.target.style="background-color:brown, color:blanchedalmond;"
 }
+function changeStyle(cls,clr,clr2) {
+  let elems = document.getElementsByClassName(cls);
+  if(!elems) return;
+  for (let elem of elems) {
+    elem.style.background= clr2;
+      elem.style.color = clr;      
+  }
+}
+function changeRed(cls,clr,clr2) {
+  let elems = document.getElementsByClassName(cls);
+  if(!elems) return;
+  for (let elem of elems) {
+    elem.style.background= clr2;
+      elem.style.color = clr;      
+  }
+}   
+
