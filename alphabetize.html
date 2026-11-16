@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{  display: flex;  flex-direction:row; font-family:Verdana, Tahoma, sans-serif;
+        font-size: 15px;background-image: linear-gradient(to bottom, burlywood ,rgb(113, 113, 240), coral);
+        color: blanchedalmond;    justify-content: space-around;flex-wrap: wrap; }
+    
+        .row100{display: flex; background-color :rgb(113, 113, 240) ;
+        justify-content: center;}
+        .header{display:flex;min-width:100%;flex-direction:row;}
+        main{ display: flex; flex-direction:column;padding: 10px;margin: 20px;
+        max-width: 704px;border: burlywood 5px solid;border-radius: 20px;
+        background-image:linear-gradient(to bottom, brown, yellow, royalblue); 
+        min-width: 300px;}
+        main h1{margin:0 auto;position: relative;background-color: darkblue; }
+        .over h1{text-shadow: 5px 5px 5px white; font-weight: bold;word-spacing: 5px;
+                line-height:50px;color: blue;position: absolute;font-size: 4Vh;}
+      
+        p #newp{display: flex;max-width:650px;text-wrap: wrap;margin:5px auto;}
+        textarea{max-width: 700px;height:170px; border: 2px rebeccapurple  solid;
+         font-family:Verdana, Tahoma, sans-serif; font-size: 1.5em; border-radius: 10px;}
+        #lefter{ flex:1 1 300px; background-color: rgb(227, 185, 185);  min-height: 300px;opacity: 0.8; flex-direction: column;
+           padding: 100px;
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%); shape-outside: polygon(0% 0%, 0% 100%, 100% 100%);position: relative; } 
+        #righter{ flex:1 1 300px; background-color:rgb(227, 185, 185); min-height: 300px;opacity: 0.8; flex-direction: column; padding: 100px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%); shape-outside: polygon(0% 0%, 100% 0%, 100% 100%); position: relative;}       
+        .over{display: flex;position: relative;}
+            
+        button{display: flex;margin: 5px; font-size: 1.5em; background-color:rebeccapurple ;    color: whitesmoke; border: 3px whitesmoke solid; border-radius: 10px; padding: 4px;} 
+        #convbutton:hover{border: 3px lightgreen solid;}
+        #paratidy:hover{border: 3px solid orange;}
+        ol{display: flex; flex-direction: row;margin-left:-10px;}         
+        li{margin-left:25px  ; font-size: 1.1rem;background-color: inherit;}
+        #hint{display: flex;background-color: rebeccapurple;border: 4px rebeccapurple solid;margin: auto;color: aliceblue; }
+           img{max-height:127px; max-width:221px;  display:flex;}
+        .hangnav {width:100%;  display: flex;  flex-direction:row; flex-wrap:wrap ;justify-content: center; }
+        .hangnav li{display:flex; }
+        .chlarge {color: orange;background-color: royalblue; border: 2px solid black;padding: 10px;
+            margin: 5px;   }
+        .red{ background-color:blanchedalmond;font-size:1.3em; color:orangered; border-radius:10px;}
+        .button {height: fit-content;        color: #FFF;        background-color: royalblue;          
+            padding-left: 5px;  padding-top: 1px;             border: 2px solid #5D6063;    
+            border-radius: 3px;              margin: 5px auto;font-size: small; }
+        .button:hover { font-size: larger; }
+        @media(max-width:1400px ){
+            .over h2{font-size: 1em;font-weight: bold;}
+        }
+        @media (max-width:1000px){
+            #lefter, #righter{flex:1 2 150px;padding: 40px;}
+            .over h2{word-spacing: 6px; line-height:45px;color: blue;position: absolute;flex:1 1 3;font-size: 0.9rem;}
+        }
+        @media(max-width:1000px){
+            #overtwo{display: none;} 
+            main{font-size: 0.9em;}
+            li{font-size: 1em;}
+             .over{display: none;}
+        }
+        @media(max-width:800px){
+            li{list-style-type: none;font-size: 1em; margin-left: 0;}
+            .hangnav span{display:none}
+            
+        }
+
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="hangnav">       
+        <span class="chlarge">Memory cards</span> 
+        <li ><a href="memlimeplate.html"><button class="red" onmouseover="changeRed('red','grey','springgreen')"
+            onmouseout="changeStyle('red', 'orangered', 'blanchedalmond')"id="homeid">limestone trail  </button> </a></li> 
+        <li><a href="memlindplate.html"> <button class="button" id="twoweek"> licky lippy </button>   </a>    </li> 
+         <li><a href="memdavidplate.html"> <button class="button" id="twoweek"> david set </button>   </a>    </li>
+         <li><a href="alphabetize.html"> <button class="button" id="twoweek">alphabetize</button>   </a>    </li>
+        <!--<li><a href="multiskill/travelog11-4-24.html"> <button class="button" id="twoweek">11-04-2024</button>   </a>    </li> 
+        <li><a href="multiskill/travelog20-4-24.html"> <button class="button" id="twoweek">20-04-2024</button>   </a>    </li>
+        <li ><a href="multiskill/mapjwork.html"> <button class="button" id="twoweek"> map</button> </a></li>  -->
+        <span class="chlarge">OTHER -  pending</span> 
+    </div>        
+</header>     
+
+<div class="over" id="overone">  
+    <div id="lefter">        
+    </div>
+       
+    <h1>Cognitive exercise, <br>      can you analyise and create an accurate breakdown of words in alphabetical order.</h1>    
+</div>
+<main>
+
+    <h1>Alphabetize</h1><ol>
+    <li>Enter a paragraph in the top box</li>
+        <li style="color: whitesmoke;"> try to get the words in alphabetical order in the second one </li>
+        <li>and then when you think you have it press the 'check alphabetical' button below to see how you compare to the computer 
+        solution</li>
+    </ol>
+     <p id="hint" >a b c d e f g h i j k l m n o p q r s t u v w x y z</p> 
+    <textarea id="divorig"></textarea>
+    <textarea>        
+    </textarea>
+    <div class="row100">
+        <button id="convbutton">check alphabetical</button>
+        <button id="paratidy">tidy</button> 
+     </div> 
+    <textarea id="newp"></textarea>
+    <p id="tidyp"></p>    
+  
+  </main>
+<div class="over" id="overtwo">
+    <div id="righter">        
+    </div>
+    <h1>How good are you are this. I am quick (ish) but surprised at what I miss which is quite a lot.</h1>
+</div>
+
+</body>
+<script>
+let converbutton=document.getElementById('convbutton');
+converbutton.addEventListener('click',converter);
+let imagesort=[];
+
+let tidy=document.getElementById('paratidy');
+tidy.addEventListener('click', paratidy);
+let tidyp;
+let inneri = [];
+let imagesortb = [];
+function converter(){
+    inneri=[];    
+    let a=document.querySelector('#divorig').value;
+    let b=a.replace(/[\d.,":;!?=]/gm,' ').trim();   
+    let imagesortb=b.split(' '); 
+     for(let i=0;  i<imagesortb.length; i++){        
+        if(imagesortb[i]=='&'){         
+            inneri.push('&')   
+              imagesortb.splice(i,1,'and');       
+        }  
+          else if(imagesortb[i]=='and'){
+            inneri.push('and')          
+        } 
+         else if(imagesortb[i]=='And'){
+            inneri.push('And')          
+        }   
+    }  
+imagesort=imagesortb.sort((a, b) => a.localeCompare( b , 
+            undefined, { sensitivity: 'base' }));   
+document.querySelector('#newp').value='';   
+   keepconverting()
+}
+function keepconverting(){
+    imagesortc=imagesort;
+    let ll= inneri.length;
+    let point=imagesort.indexOf('and'); 
+    
+    let pointed = point;   
+//more clever than I realised
+    for(let i=0; i<ll; i++){
+        imagesortc.splice(pointed, 1, inneri[i]);
+        pointed++;
+    };
+    document.querySelector('#tidyp').innerHTML=Object.values(inneri);        
+    for(i=0; i<imagesortc.length; i++){
+        document.querySelector('#newp').value=Object.values(imagesortc);
+    }
+}
+function paratidy(){
+     document.querySelector('#newp').value='';  
+      
+nextp()
+}
+function nextp(){
+    document.querySelector('#tidyp').textContent='haha' ;
+}
+let lister=document.querySelectorAll('li');
+for(let i=0; i<lister.length; i++){
+    lister[i].addEventListener('mouseover', bluer);
+    lister[i].addEventListener('mouseout',normal);
+}
+function bluer(e){   
+    console.log('hi lister');
+   
+        e.target.style='color:white;background-color:blue; '    
+}
+function normal(e){
+    e.target.style="background-color:brown, color:blanchedalmond;"
+}
+</script>
+</html>
