@@ -129,7 +129,7 @@ let imagesortb = [];
 function converter(){
     inneri=[];    
     let a=document.querySelector('#divorig').value;
-    let b=a.replace(/[\d.,":;!?=]/gm,' ').trim();   
+    let b=a.replace(/[\d.\b,,":;!?=]/gm,' ').trim();   
     let imagesortb=b.split(' '); 
      for(let i=0;  i<imagesortb.length; i++){        
         if(imagesortb[i]=='&'){         
